@@ -9,7 +9,7 @@ DB_PATH.parent.mkdir(exist_ok=True)
 engine = create_engine(f"sqlite:///{DB_PATH}")
 
 #loading schema
-SCHEMA = Path(__file__).parent.parent / "sql" / "database.sql"
+SCHEMA = Path(__file__).parent.parent / "sql" / "schema.sql"
 with engine.connect() as conn:
     for stmt in SCHEMA.read_text().split(";"):
         stmt = stmt.strip()
