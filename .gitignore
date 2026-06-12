@@ -1,0 +1,18 @@
+# database
+data/db/*.db
+
+# raw data (too large)
+data/raw/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# environment
+.env
+venv/
+
+# OS files
+.DS_Store

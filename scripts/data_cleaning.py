@@ -40,7 +40,7 @@ tx.to_csv(PROCESSED / "clean_transactions.csv", index=False)
 print(f"  done — {len(tx)} rows saved")
 
 #clean scheme perf 
-print("Cleaning scheme_performance...")
+print("Cleaning scheme_performance")
 perf = pd.read_csv(RAW / "07_scheme_performance.csv")
 
 numeric_cols = ["return_1yr_pct","return_3yr_pct","return_5yr_pct",
